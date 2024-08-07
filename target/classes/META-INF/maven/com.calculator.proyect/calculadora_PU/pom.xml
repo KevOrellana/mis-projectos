@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.calculator.proyect</groupId>
+  <artifactId>calculadora_PU</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>calculadora_PU</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+ <build>
+    <plugins>
+        <!-- Plugin de JaCoCo -->
+        <plugin>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+<!--            <configuration>
+		    	<excludes>
+            		<exclude>**/test/**</exclude>
+        		</excludes>
+	     	</configuration>-->
+            <version>0.8.7</version> <!-- O la versión más reciente -->
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>prepare-agent</goal>
+                    </goals>
+                </execution>
+                <execution>
+                    <id>report</id>
+                    <phase>prepare-package</phase>
+                    <goals>
+                        <goal>report</goal>
+                    </goals>
+                </execution>
+            </executions>
+            
+        </plugin>
+        <!-- Plugin de Ejecución de pruebas Maven -->
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.2.0</version>
+            <configuration>
+                <mainClass>com.calculator.proyect.calculadora_PU.Main</mainClass> <!-- Reemplaza com.example.MainClass con el nombre completo de tu clase principal -->
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+
+  <dependencies>
+    <dependency>
+ 		<groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.13.2</version> <!-- Or the latest version -->
+    </dependency>
+  </dependencies>
+</project>
