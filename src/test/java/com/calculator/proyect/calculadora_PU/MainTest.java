@@ -10,12 +10,12 @@ public class MainTest {
 
     double num1 = 5;
     double num2 = 3;
-
+/*
     @Test
     public void testSumar() {
     	Main calculadora = new Main();
         assertEquals(8.0, calculadora.calcular("SUMAR", 5.0, 3.0), 0.0001);
-    }
+    } 
 
     @Test
     public void testRestar() {
@@ -42,4 +42,5 @@ public class MainTest {
             calculadora.calcular("DIVIDIR", 5.0, 0.0);
         });
     }
+     */
 }

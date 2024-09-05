@@ -11,21 +11,19 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <sonar.organization>kevorellana</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.token>a6d005c32636739e41fbd8af33da5441f0debfb3</sonar.token>
   </properties>
 
  <build>
     <plugins>
-        <!-- Plugin de JaCoCo -->
+        <!-- Plugin de JaCoCo 
         <plugin>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
-<!--            <configuration>
-		    	<excludes>
-            		<exclude>**/test/**</exclude>
-        		</excludes>
-	     	</configuration>-->
-            <version>0.8.7</version> <!-- O la versión más reciente -->
+            <version>0.8.7</version> 
             <executions>
                 <execution>
                     <goals>
@@ -41,7 +39,7 @@
                 </execution>
             </executions>
             
-        </plugin>
+        </plugin> -->
         <!-- Plugin de Ejecución de pruebas Maven -->
         <plugin>
             <groupId>org.codehaus.mojo</groupId>

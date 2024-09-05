@@ -20,12 +20,14 @@ public class Main{
 	            case "SUMAR":
 	                System.out.println("El primer numero es: " + num1);
 	                System.out.println("El segundo numero es: " + num2);
+					System.out.println("");
 	                resultado = num1 + num2;
 	                System.out.println("El resultado es: " + resultado);
 	                break;
 	            case "RESTAR":
 	                System.out.println("El primer numero es: " + num1);
 	                System.out.println("El segundo numero es: " + num2);
+					System.out.println("salto");
 	                resultado = num1 - num2;
 	                System.out.println("El resultado es: " + resultado);
 	                break;
